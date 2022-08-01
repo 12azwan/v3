@@ -1,0 +1,15 @@
+const { sticker5 } = require('../lib/sticker')
+const fetch = require('node-fetch')
+
+let handler = async (m, { conn, text, command }) => {
+ let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
+ let stiker = await sticker5(null, API('lolhuman', `/api/${command}`, { text: teks }, 'apikey'), packname, author)
+  if (stiker) return await conn.sendFile(m.chat, stiker, '', '', m)
+  throw stiker.toString()
+}
+
+handler.help = new Array(4).fill('ttp').map((v, i) => v + (i + 1) + ' <teks>')
+handler.tags = ['sticker']
+handler.command = /^((ttp(2|3|4|5|6)?)|(attp2?))$/i
+
+module.exports = handler
