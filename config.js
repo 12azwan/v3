@@ -5,7 +5,7 @@ global.mods = ['6288212514602'] //ganti pakai nomormu biar bot berfungsi
 global.prems = ['6288212514602'] //ganti pakai nomormu biar bot berfungsi
 
 //=============『 Info Owner 』============== //
-global.nameowner = 'qLwojIQkBI5oD86nUpRQ 
+global.nameowner = 'qLwojIQkBI5oD86nUpRQ' 
 global.numberowner = '6288212514602','6288212514602' //ganti pakai nomor mu
 global.instagram = 'https://instagram.com/adix.yr' //ganti pakai Instagram mu
 global.github = 'https://github.com/Geeruu0' //ganti aja pakai githubmu
